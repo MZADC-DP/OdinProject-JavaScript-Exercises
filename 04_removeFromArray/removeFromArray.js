@@ -7,6 +7,12 @@ const removeFromArray = function(baseArr , ...removeValue) {
         3. Creating a new function with => & baseElement (just a placeholder name) and using includes to check if the remove list contains what we have
         4. ! is used to say that if what we have is not on the remove list, make it true so we can keep it, else make it false
     
+        baseElement - Just a placeholder name for the variables inside of baseArr
+        => !removeValue.includes(baseElement) - Refers to check if the variable inside baseArr exists with the removeValue list, 
+                                                if it does it returns true but we do not want it hence the ! sign making it false
+                                                if it returns false, it means it does not exists in the list, and we should keep that value
+                                                hence ! makes it true. 
+                                                As filter method only accepts values that are true
     
         Methods:
 
