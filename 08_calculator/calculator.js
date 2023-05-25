@@ -1,24 +1,80 @@
-const add = function() {
+const add = function(...nums) {
+	
+  let sum = 0;
+
+  for (let i = 0; i < nums.length; i++)
+  {
+    sum += nums[i];
+  }
+  return sum;
+
+};
+
+const subtract = function(first , second) {
+
+  return first - second;
+
 	
 };
 
-const subtract = function() {
+  const sum = function(nums) {
+
+    let sum = 0;
+
+    if(nums.length == 0)
+      return sum;
+
+    for(let i = 0; i < nums.length; i++)
+    {
+      sum += parseInt(nums[i]);
+    }
+
+    return sum;
+    
+  };
+
+const multiply = function(nums) {
+
+    let sum = 0; 
+    
+    sum = Number(nums[0]);
+
+    for(let i = 1; i < nums.length; i++)
+    {
+      sum *= Number(nums[i]);
+    }
+
+    return sum;
+
+};
+
+const power = function(first, second) {
+
+  let sum = 1;
+
+  for(let i = 0; i < second; i++)
+  {
+    sum *= first;
+  }
+
+  return sum;
+
 	
 };
 
-const sum = function() {
-	
-};
+const factorial = function(number) {
 
-const multiply = function() {
+  if(number == 0)
+    return 1;
 
-};
+  let sum = number;
 
-const power = function() {
-	
-};
+  for(let i = 1; i < number; i++)
+  {
+    sum *= (number - i); 
+  }
 
-const factorial = function() {
+  return sum;
 	
 };
 
